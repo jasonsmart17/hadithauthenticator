@@ -1,2 +1,10 @@
 # hadithauthenticator
 The Hadith Authenticator Project
+
+In the name of God, Most Gracious, Most Merciful
+
+Hadith Authenticator is an open source project with the goal of InShaHAllah, contributing toward the understanding of the hadith (traditions) of Rasoulallah(peace and blessings be upon him) and his purified projeny(peace and blessings be upon them). The first part of the project is aimed at creating tools to validate and authenticate these traditions using an automated process (AI) and making the results of the authentication process available to the general public via the Internet. In the first phase of the project, we will create a data model, training sets that are composed of traditions that are generally and widely accepted as authentic and thus valid and test sets we can use to validate our model. We will use modern tools such as Tensor Flow to run a text string against the model to determine on a scale of 1 to 100 if the text is a valid tradition, 1 being absolutely not authentic and 100 being absolutely authentic. Values will be determined by how many features of the text match frequently encountered features in the test data. 
+
+In the first phase, we will be using only Arabic text in utf8 format in both the training and test sets. The program will only accept Arabic utf8 characters in the input string. In subsequent phases of the project, InShahAllah, we will allow both non Arabic text, such as English text and images of Arabic and other text to be accepted as input after this is processed by external tools and converted into utf8 Arabic text. Since the original language of all these traditions is Arabic, we can only allow Arabic to be used in the final step for validating the data model. 
+
+Currently, the directory has two folders. Data and Code. Data is for the raw data, csv format, and code is for the python code that we will use to create the hadith authenticator program. Once we determine that our model is working as expected, we will create an api and will expose the api via a front end Javascript framework for the website and also create an app that will consume this framework and make calls to the api. 
